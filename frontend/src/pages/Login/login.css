@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+.sign_up {
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-main {
+    height: 60vh;
+    width: 55vw;
+    border: 4px solid white;
+    display: flex;
+}
+
+.signup-main .left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    overflow: hidden;
+}
+
+
+.signup-main .right {
+    width: 50%;
+    padding: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.right form .create-account-span {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 1rem auto;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: white;
+    border-bottom: 3px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+.right form .create-account-span:hover {
+    color: blue;
+    border-bottom: 3px solid blue;
+    transition: all 0.3s ease-in-out;
+}
+
+.right form input {
+    outline: none;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0;
+    padding: 0.8rem 0.6rem;
+    font-weight: 500;
+    border-radius: 0.4rem;
+    min-width: 15rem;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid white;
+}
+
+.right form input:hover {
+    border: 3px solid blue;
+    transition: all 0.3s ease-in-out;
+}
+
+.right form button {
+    min-width: 6rem;
+    letter-spacing: 0.1rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.4rem;
+    outline: none;
+    background: #6041de;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0.5rem auto;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #92fe9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.8rem;
+}
+
+.right form button:hover {
+    background-color: #92fe9d;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+    border: 1px solid blue;
+}
+
+.right form a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.right form a:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+.right form .send-code-span {
+    letter-spacing: 0.1rem;
+    margin: 1rem auto;
+    font-weight: 500;
+    padding-bottom: 0.4rem;
+    font-size: 1.1rem;
+    color: white;
+    border-bottom: 2px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1425px) {
+    .signup-main {
+        height: 60vh;
+        width: 75vw;
+    }
+}
+
+@media (max-width: 1050px) {
+    .signup-main {
+        height: 55vh;
+        width: 85vw;
+    }
+}
+
+@media (max-width: 928px) {
+    .signup-main {
+        height: 50vh;
+        width: 85vw;
+    }
+
+    .right form .create-account-span {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .signup-main {
+        height: auto;
+        flex-direction: column;
+        width: 85vw;
+    }
+
+    .signup-main .left {
+        width: 100%;
+    }
+
+    .signup-main .right {
+        width: 100%;
+    }
+
+}
